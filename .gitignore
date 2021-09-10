@@ -1,0 +1,17 @@
+node_modules/
+package-lock.json
+.idea/
+dist/
+
+# See https://next.yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+#
+# @vinhowe: We're not using zero-install mode just because it's generally an
+# antipattern to version binary files, especially if they're high churn.
+# This is the only reason, and there may well be a better reason to go for it.
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
